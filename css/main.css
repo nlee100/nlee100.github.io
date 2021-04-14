@@ -1,0 +1,383 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap");
+html {
+  font-family: "Roboto";
+  font-weight: 300;
+  height: 100%;
+}
+
+body {
+  background-color: #fcfcff;
+  margin: 0;
+  height: 100%;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fcfcff;
+  margin-top: 0px;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  z-index: 1;
+}
+
+header .title {
+  margin-left: 25px;
+  margin-top: 2px;
+  letter-spacing: 0px;
+  line-height: 1.5;
+  font-weight: bold;
+  font-family: "Montserrat";
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.829);
+}
+
+header .nav-link {
+  margin-right: 25px;
+  letter-spacing: 0px;
+  line-height: 1.5;
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+}
+
+header .nav-link a {
+  color: rgba(0, 0, 0, 0.829);
+  font-size: 16px;
+  text-decoration: none;
+}
+
+header .nav-link a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+  display: block;
+  position: absolute;
+  height: 2px;
+  left: 50%;
+}
+
+header .nav-link a:hover:after {
+  background: #F7882F;
+  width: 100%;
+  left: 0;
+}
+
+.hidden {
+  -webkit-transition: 0.75s ease-in-out;
+  transition: 0.75s ease-in-out;
+  visibility: hidden;
+}
+
+.show {
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  visibility: visible;
+}
+
+.active {
+  bottom: 0;
+  content: "";
+  color: #F7882F !important;
+}
+
+#home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  padding: 20px 0px 20px 0px;
+  color: rgba(0, 0, 0, 0.829);
+  background-image: url("../images/background2.jpeg");
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
+}
+
+#home-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: none;
+          flex-direction: none;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  margin: 0;
+  width: 45%;
+  min-width: 330px;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.829);
+  text-align: center;
+}
+
+#about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  color: rgba(0, 0, 0, 0.829);
+}
+
+#about-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: none;
+          flex-direction: none;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  margin: 0;
+  width: 75%;
+  min-width: 330px;
+  line-height: 1.5;
+}
+
+#cs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+#writing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-image: url("../images/end-background.jpeg");
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
+}
+
+#writing-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: none;
+          flex-direction: none;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  margin: 0;
+  width: 75%;
+  min-width: 330px;
+  line-height: 1.5;
+}
+
+h {
+  font-size: 30px;
+  font-family: "Montserrat";
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.console {
+  font-size: 40px;
+  text-align: center;
+  height: 75px;
+  width: 75%;
+  display: block;
+  position: static;
+  color: rgba(0, 0, 0, 0.829);
+  margin-top: 75px;
+  padding: 30px;
+  font-family: "Montserrat";
+}
+
+.console-underscore {
+  display: inline-block;
+  position: relative;
+  top: -0.0em;
+  left: 4px;
+  font-family: "Montserrat";
+}
+
+p {
+  font-size: 18px;
+}
+
+p .emphasize {
+  color: #4EC5C1;
+  font-weight: bold;
+}
+
+p a {
+  color: #F7882F;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+p a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  background: #F7882F;
+  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+  display: block;
+  position: absolute;
+  height: 2px;
+  left: 50%;
+}
+
+p a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+#title_pic {
+  height: 30px;
+  width: auto;
+  padding-top: 5px;
+}
+
+#profile_pic {
+  height: 355px;
+  width: auto;
+  padding: 10px;
+  padding-top: 20px;
+}
+
+icon-bar-about {
+  color: rgba(0, 0, 0, 0.829);
+  text-align: center;
+  display: block;
+  padding: 10px;
+  padding-top: 20px;
+}
+
+icon-bar-about i {
+  color: rgba(0, 0, 0, 0.829);
+  margin: 0px 10px;
+}
+
+icon-bar-about i:hover {
+  color: #F7882F;
+}
+
+icon-bar-footer {
+  color: rgba(0, 0, 0, 0.829);
+  text-align: center;
+  display: block;
+  padding: 10px;
+  padding-top: 20px;
+}
+
+icon-bar-footer i {
+  color: rgba(0, 0, 0, 0.829);
+  margin: 0px 5px;
+}
+
+icon-bar-footer i:hover {
+  color: #F7882F;
+}
+
+footer {
+  color: rgba(0, 0, 0, 0.829);
+  font-size: 16px;
+  text-align: center;
+  padding: 10px;
+}
+/*# sourceMappingURL=main.css.map */

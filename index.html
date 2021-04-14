@@ -1,27 +1,98 @@
 <!DOCTYPE html>
+<html>
+
 <head>
-		<title>Naomi Lee, CS + English Student</title>
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm Naomi Lee!</h1>
-				<p>I'm boba connoisseur and student at <em>Brown University</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:naomileegolfer@gmail.com">email</a></li>
-        		<li><a href="https://github.com/nlee100">github.com/nlee100</a></li>
-			</ul>
-		</footer>
-	</body>
+    <meta charset "UTF-8" />
+    <meta name="viewport" content-"width=device-width, initial-scale=1.0" />
+    <base target="_blank" rel="noopener noreferrer">
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="shortcut icon" href="./images/profile_test_3.png" type="image/x-icon">
+</head>
+
+<title>Naomi Lee</title>
+
+<body>
+
+    <header>
+        <div class="title">
+            <!-- <img id="title_pic" src="./images/cookie.png"> -->
+            NAOMI LEE
+        </div>
+        <div>
+            <div class="nav-link"><a href="#home">Home</a></div>
+            <div class="nav-link"><a href="#about">About Me</a></div>
+            <div class="nav-link"><a href="#cs">CS Rundown</a></div>
+            <div class="nav-link"><a href="#writing">Writing Portfolio</a></div>
+        </div>
+    </header>
+
+    <section id="home">
+        <!-- word carousel for different noun descriptions -->
+        <!-- <wordCarousel>
+            <h id="wordCarousel">
+                <span>Hello! I'm Naomi and a</span>
+                <div>
+                    <ul class="flip4">
+                        <li>student.</li>
+                        <li>varsity athlete.</li>
+                        <li>software developer.</li>
+                        <li>UX designer.</li>
+                    </ul>
+                </div>
+            </h>
+        </wordCarousel> -->
+        <!-- console typewriter for different noun descriptions -->
+        <div class='console'> Hi! I'm Naomi Lee and a <span id='text'></span><div class='console-underscore' id='console'>&#95;</div>
+        </div>
+        <img id="profile_pic" src="images/profile_test_3.png" alt="Pictured is a vector illustration of me by me!">
+        <div id="home-content">
+            <p> Focused on <span class="emphasize">Machine Learning</span>, <span class="emphasize">UI/UX</span>, and <span class="emphasize">Nonfiction Writing</span>, I'm passionate about applications of technology to Big Data, Computer Vision, and Digital Health.</p>
+            <p>The hope is to make the world <span class="emphasize">smarter</span>, <span class="emphasize">safer</span>, and a bit <span class="emphasize">kinder</span>, one algo at a time!</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h>About Me</h>
+        <div id="about-content">
+            <p>Hello! I'm Naomi, a varsity athlete and senior at <a target=”_blank” href="https://www.brown.edu/">#Brown University</a> double-majoring in <span class="emphasize">computer science</span> and <span class="emphasize">English</span>. With my knowledge of computer science, I love applying machine learning and UI/UX design to create <span class="emphasize">digital health solutions</span> and improve patient care. If you catch me on a debugging break, I'll probably be writing a poem or some sort of extensive disquisition. Otherwise, you can find me searching for boba, creating digital art, or investigating human physiology and psychology.</p>
+            <p>Previously, I've interned at <a target=”_blank” href="https://www.siemens-healthineers.com/">#Siemens Healthineers</a> and <a target=”_blank” href="https://www.intuitive.com/en-us">#Intuitive Surgical</a> in <span class="emphasize">big data</span> and <span class="emphasize">full-stack software engineering</span>. My academic research has been concentrated on delivering health solutions and exploring ethical algorithmic implications.</p>
+            <p>I'll be returning to Providence this fall to complete my M.S. in computer science through Brown's 5th-Year Baccalaureate program. As I learn, I'm always looking for opportunities to work with kind and talented people, so feel free to <a target=”_blank” href="mailto:naomi_lee1@brown.edu">#reach out to me</a>. Check out some of my projects below to see what I've been up to!</p>
+        </div>
+        <icon-bar-about>
+            <a class="btn btn-default" href="mailto:naomi_lee1@brown.edu"><i class="fa fa-envelope-o fa-clickable fa-lg" aria-hidden="true" title="Email"></i></a>
+            <a class="btn btn-default" target="_blank" href="https://www.linkedin.com/in/naomi-lee100/"><i class="fa fa-linkedin fa-clickable fa-lg" aria-hidden="true" title="LinkedIn"></i></a>
+            <a class="btn btn-default" target="_blank" href="https://github.com/njlee16"><i class="fa fa-github fa-clickable fa-lg" aria-hidden="true" title="GitHub" ></i></a>
+            <a class="btn btn-default" target="_blank" href="https://www.facebook.com/profile.php?id=100013110647234"><i class="fa fa-facebook fa-clickable fa-lg" aria-hidden="true" title="Facebook"></i></a>
+        </icon-bar-about> 
+    </section>
+
+    <section id="cs">
+        <h>CS Rundown</h>
+    </section>
+
+    <section id="writing">
+        <h>Writing Portfolio</h>
+        <div id="writing-content">
+            <p>Most of my work in writing is centered around <span class="emphasize">poetry</span> and <span class="emphasize">activism</span>.</p>
+        </div>
+    </section>
+
+    <icon-bar-footer>
+        <a class="btn btn-default" href="mailto:naomi_lee1@brown.edu"><i class="fa fa-envelope-o fa-clickable" aria-hidden="true" title="Email"></i></a>
+        <a class="btn btn-default" target="_blank" href="https://www.linkedin.com/in/naomi-lee100/"><i class="fa fa-linkedin fa-clickable" aria-hidden="true" title="LinkedIn"></i></a>
+        <a class="btn btn-default" target="_blank" href="https://github.com/njlee16"><i class="fa fa-github fa-clickable" aria-hidden="true" title="GitHub" ></i></a>
+        <a class="btn btn-default" target="_blank" href="https://www.facebook.com/profile.php?id=100013110647234"><i class="fa fa-facebook fa-clickable" aria-hidden="true" title="Facebook"></i></a>
+    </icon-bar-footer> 
+
+    <footer>
+        © 2021 by Naomi Lee.
+    </footer>
+
+</body>
+
+<script src="index.js"></script>
+<script src="node_modules/smoothscroll-polyfill/dist/smoothscroll.js"></script>
+<script src="https://use.fontawesome.com/ad5bce4110.js"></script>
+
 </html>
+
