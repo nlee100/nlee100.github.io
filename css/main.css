@@ -226,7 +226,7 @@ header .nav-link a:hover:after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 75%;
+  width: 85%;
   min-width: 800px;
   height: 75%;
   overflow: hidden;
@@ -235,10 +235,10 @@ header .nav-link a:hover:after {
 
 #cs-gallery .project {
   position: relative;
-  width: 22%;
+  width: 20%;
   height: 80%;
   overflow: hidden;
-  margin: 10px 10px 10px 10px;
+  margin: 10px;
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   -webkit-transition: all 0.4s ease-in-out;
@@ -248,11 +248,14 @@ header .nav-link a:hover:after {
 #cs-gallery .project:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
-  color: rgba(0, 0, 0, 0.616);
+}
+
+#cs-gallery .project:hover .project-title {
+  color: rgba(0, 0, 0, 0.514);
 }
 
 #cs-gallery .project:hover .overlay {
-  height: 40%;
+  height: 35%;
 }
 
 #cs-gallery .project .overlay {
@@ -274,7 +277,6 @@ header .nav-link a:hover:after {
 }
 
 #cs-gallery .overlay-text {
-  color: black;
   font-size: 16px;
   font-weight: bold;
   position: absolute;
@@ -312,14 +314,13 @@ header .nav-link a:hover:after {
 #cs-gallery .project-title {
   position: absolute;
   text-align: center;
-  top: 35%;
+  top: 30%;
   width: 90%;
   padding-left: 5%;
   word-wrap: break-word;
   font-size: 25px;
   font-weight: bold;
   font-family: "Montserrat";
-  color: #fcfcff;
 }
 
 #cs-gallery .project-subtitle {

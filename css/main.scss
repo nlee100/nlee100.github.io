@@ -185,7 +185,7 @@ header {
 
 #cs-gallery {
     @include flex(center, row, center);
-    width: 75%;
+    width: 85%;
     min-width: 800px;
     height: 75%;
 	// position: relative;
@@ -195,21 +195,23 @@ header {
     text-align: center;
     .project {
         position: relative;
-        width: 22%;
+        width: 20%;
         height: 80%;
         overflow: hidden;
-        // margin: 10px;
-        margin: 10px 10px 10px 10px;
+        margin: 10px;
+        // margin: 0 10 10 10px;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
         transition: all 0.4s ease-in-out;
         &:hover {
             transform: scale(1.05);
-            color: $overlay-color;
+            .project-title {
+                color: $overlay-color;
+            }
         }
         // overlay
         &:hover .overlay{
             //
-            height: 40%;
+            height: 35%;
         }
         .overlay {
             position: absolute;
@@ -271,7 +273,6 @@ header {
         // padding:0;
     }
     .overlay-text {
-        color: black;
         font-size: 16px;
         font-weight: bold;
         position: absolute;
@@ -312,14 +313,14 @@ header {
     .project-title {
         position: absolute;
         text-align: center;
-        top: 35%;
+        top: 30%;
         width: 90%;
         padding-left: 5%;
         word-wrap: break-word;
         font-size: 25px;
         font-weight: bold;
         font-family: "Montserrat";
-        color: $back-color;
+        // color: $content-color;
     }
     .project-subtitle {
         position: absolute;
@@ -376,6 +377,7 @@ header {
     // margin: 10px;
     width: 75%;
     height: 55%;
+    
 }
 
 h {
