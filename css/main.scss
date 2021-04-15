@@ -45,6 +45,7 @@ header {
     @include flex(space-between, row, center);
     // @include flex(flex-end, row, center);
     background-color: $back-color;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     // background-color: transparent;
     // border-bottom: 1px inset rgba(230, 210, 210, 0.562);
     margin-top: 0px;
@@ -150,11 +151,11 @@ header {
 }
 
 #home-content {
-    @include flex(center, none, left);
-    flex-direction: column;
+    @include flex(center, column, left);
+    // flex-direction: column;
     margin: 0;
     // margin-right: 50px;
-    width: 45%;
+    width: 50%;
     min-width: 330px;
     line-height: $line-height;
     color: $content-color;
@@ -168,8 +169,8 @@ header {
 }
 
 #about-content {
-    @include flex(center, none, left);
-    flex-direction: column;
+    @include flex(center, column, left);
+    // flex-direction: column;
     margin: 0;
     // margin-right: 50px;
     width: 75%;
@@ -182,6 +183,170 @@ header {
     @include component(100%, 100%, relative);
 }
 
+#cs-gallery {
+    @include flex(center, row, center);
+    width: 75%;
+    min-width: 800px;
+    height: 75%;
+	// position: relative;
+	overflow: hidden;
+    // background-color: palevioletred;
+    // padding: 10px;
+    text-align: center;
+    .project {
+        position: relative;
+        width: 22%;
+        height: 80%;
+        overflow: hidden;
+        // margin: 10px;
+        margin: 10px 10px 10px 10px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+        transition: all 0.4s ease-in-out;
+        &:hover {
+            transform: scale(1.05);
+            color: $overlay-color;
+        }
+        // overlay
+        &:hover .overlay{
+            //
+            height: 40%;
+        }
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: $back-color;
+            overflow: hidden;
+            width: 100%;
+            height: 0;
+            transition: .4s ease;
+            opacity: 0.7
+          }
+        // &:hover .overlay {
+        //     transform: translateY(0%);
+        //   }
+
+        // darken
+        // .overlay {
+        //     background: rgba(darken(pink, 10%), .9);
+        //     height: 100%;
+        //     grid-column: 1 / -1;
+        //     grid-row: 1 / -1;
+        //     position: relative;
+        //     display: grid;
+        //     justify-items: center;
+        //     align-items: center;
+        //     transform: translateY(101%);
+        //     transition: all 0.3s ease-in-out;
+        // }
+        // &:after {
+        //     content:'\A';
+        //     position:absolute;
+        //     width:100%; 
+        //     height:100%;
+        //     top:0; 
+        //     left:0;
+        //     background:rgba(0,0,0,0.25);
+        //     // background:seagreen;
+        //     opacity:0;
+        //     transition: all 0.5s;
+        //     //
+        //     // transform: translateY(101%);
+        //     // transition: all 0.3s ease-in-out;
+        // }
+        // &:hover:after {
+        //     opacity:0.8;
+        // }
+    }
+    .project-pic {
+        position: absolute;
+        // background-repeat: no-repeat;
+        // width: 10px;
+        // height:10px;
+        // background-position: center center;
+        // background-size: cover;
+        // text-align:center;
+        // margin:auto;
+        // padding:0;
+    }
+    .overlay-text {
+        color: black;
+        font-size: 16px;
+        font-weight: bold;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 90%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    .overlay-icon {
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        width: 90%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        display: block;
+        padding: 10px;
+        padding-top: 20px;
+        margin-top: 20px;
+        i {
+            color: $content-color;
+            margin: 0px 10px;
+        }
+        i:hover{
+            color: $highlight2-color;
+        }
+    }
+    // .subtext {
+    //     color: white;
+    //     font-size: 16px;
+    //     position: absolute;
+    //     top: 50%;
+    //     left: 50%;
+    //     transform: translate(-50%, -50%);
+    //     text-align: center;
+    // }
+    .project-title {
+        position: absolute;
+        text-align: center;
+        top: 35%;
+        width: 90%;
+        padding-left: 5%;
+        word-wrap: break-word;
+        font-size: 25px;
+        font-weight: bold;
+        font-family: "Montserrat";
+        color: $back-color;
+    }
+    .project-subtitle {
+        position: absolute;
+        width: 95%;
+        padding: 2.5%;
+        word-wrap: break-word;
+        text-align: center;
+        bottom: 0;
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
+
+// .grid__title {
+//     position: absolute;
+//     width: 100%;
+//     text-align: center;
+//     white-space: nowrap;
+//     bottom: 0;
+//     font-weight: 100;
+//     font-size: 0.8em;
+//     z-index: 3;
+//     text-transform: uppercase;
+//     color: $dark;
+//     letter-spacing: 2px;
+//   }
+
 #writing {
     @include flex(center, column, center); 
     @include component(100%, 100%, relative);
@@ -190,23 +355,70 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: 0;
 }
 
 #writing-content {
-    @include flex(center, none, left);
-    flex-direction: column;
+    @include flex(center, column, left);
+    // flex-direction: column;
     margin: 0;
     // margin-right: 50px;
-    width: 75%;
+    // width: 75%;
     min-width: 330px;
     line-height: $line-height;
+    // background: blue;
+}
+
+#writing-container {
+    // @include flex(center, none, center);
+    background-color: #ffffff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    padding: 20px;
+    // margin: 10px;
+    width: 75%;
+    height: 55%;
 }
 
 h {
     // color: $content-color;
     font-size: 30px;
+    font-weight: bold;
     font-family: "Montserrat";
+    padding-bottom: 20px;
+}
+
+p {
+    // color: $content-color;
+    font-size: 18px;
+    margin: 9px;
+    .emphasize {
+        color: $highlight-color;
+        font-weight: bold;
+    }
+    
+    a {
+        color: $highlight2-color;
+        font-weight: bold;
+        text-decoration: none;
+        display: inline-block;
+        position: relative;
+        &:after{
+            background: none repeat scroll 0 0 transparent;
+            bottom: 0;
+            content: "";
+            background: $highlight2-color;
+            // background-image: linear-gradient(0.25turn, $highlight2-color, $highlight-color);
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            width: 0;
+            display: block;
+            position: absolute;
+            height: 2px;
+            left: 50%;
+        }
+        &:hover:after {
+            width: 100%;
+            left: 0;
+        }
+    }
 }
 
 // word carousel for different noun descriptions 
@@ -268,9 +480,10 @@ h {
     position:static;
     color: $content-color;
     // top:50px;
-    margin-top:75px;
-    padding: 30px;
+    margin-top:65px;
+    padding: 10px;
     font-family: "Montserrat";
+    font-weight: bold;
 }
 .console-underscore {
     display:inline-block;
@@ -278,42 +491,9 @@ h {
     top:-0.0em;
     left:4px;
     font-family: "Montserrat";
+    font-weight: bold;
 }
 // end of console typewriter for different noun descriptions 
-
-p {
-    // color: $content-color;
-    font-size: 18px;
-    .emphasize {
-        color: $highlight-color;
-        font-weight: bold;
-    }
-    
-    a {
-        color: $highlight2-color;
-        font-weight: bold;
-        text-decoration: none;
-        display: inline-block;
-        position: relative;
-        &:after{
-            background: none repeat scroll 0 0 transparent;
-            bottom: 0;
-            content: "";
-            background: $highlight2-color;
-            // background-image: linear-gradient(0.25turn, $highlight2-color, $highlight-color);
-            transition: width 0.3s ease 0s, left 0.3s ease 0s;
-            width: 0;
-            display: block;
-            position: absolute;
-            height: 2px;
-            left: 50%;
-        }
-        &:hover:after {
-            width: 100%;
-            left: 0;
-        }
-    }
-}
 
 #title_pic {
     height: 30px;
@@ -325,8 +505,9 @@ p {
     // @include flex(center, row, center);
     height: 355px;
     width: auto;
-    padding: 10px;
-    padding-top: 20px;
+    margin: 20px;
+    border-radius: 100%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 icon-bar-about {
