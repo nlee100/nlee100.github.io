@@ -204,7 +204,7 @@ header {
         transition: all 0.4s ease-in-out;
         &:hover {
             transform: scale(1.05);
-            cursor: pointer;
+            // cursor: pointer;
             .project-title {
                 color: $overlay-color;
             }
