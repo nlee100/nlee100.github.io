@@ -204,6 +204,7 @@ header {
         transition: all 0.4s ease-in-out;
         &:hover {
             transform: scale(1.05);
+            cursor: pointer;
             .project-title {
                 color: $overlay-color;
             }
@@ -263,14 +264,6 @@ header {
     }
     .project-pic {
         position: absolute;
-        // background-repeat: no-repeat;
-        // width: 10px;
-        // height:10px;
-        // background-position: center center;
-        // background-size: cover;
-        // text-align:center;
-        // margin:auto;
-        // padding:0;
     }
     .overlay-text {
         font-size: 16px;
@@ -282,24 +275,24 @@ header {
         transform: translate(-50%, -50%);
         text-align: center;
     }
-    .overlay-icon {
-        position: absolute;
-        top: 0%;
-        left: 50%;
-        width: 90%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        display: block;
-        padding: 10px;
-        padding-top: 20px;
-        margin-top: 20px;
-        i {
-            color: $content-color;
-            margin: 0px 10px;
-        }
-        i:hover{
-            color: $highlight2-color;
-        }
+    // .overlay-icon {
+    //     position: absolute;
+    //     top: 0%;
+    //     left: 50%;
+    //     width: 90%;
+    //     transform: translate(-50%, -50%);
+    //     text-align: center;
+    //     display: block;
+    //     padding: 10px;
+    //     padding-top: 20px;
+    //     margin-top: 20px;
+    //     i {
+    //         color: $content-color;
+    //         margin: 0px 10px;
+    //     }
+    //     i:hover{
+    //         color: $highlight2-color;
+    //     }
     }
     // .subtext {
     //     color: white;
@@ -320,7 +313,6 @@ header {
         font-size: 25px;
         font-weight: bold;
         font-family: "Montserrat";
-        // color: $content-color;
     }
     .project-subtitle {
         position: absolute;
@@ -332,21 +324,6 @@ header {
         font-size: 16px;
         font-weight: bold;
     }
-}
-
-// .grid__title {
-//     position: absolute;
-//     width: 100%;
-//     text-align: center;
-//     white-space: nowrap;
-//     bottom: 0;
-//     font-weight: 100;
-//     font-size: 0.8em;
-//     z-index: 3;
-//     text-transform: uppercase;
-//     color: $dark;
-//     letter-spacing: 2px;
-//   }
 
 #writing {
     @include flex(center, column, center); 
