@@ -61,7 +61,6 @@ window.addEventListener('scroll', changeNavLinkOnScroll);
 // ------------------------- console typewriter ------------------------- //
 
 // console typewriter for different noun descriptions
-// learned from @CodePen
 consoleText(['student.','varsity athlete.', 'software developer.', 'writer.'], 'text',['#d81159', '#956262','#4EC5C1','#F7882F']);
 
 function consoleText(words, id, colors) {
