@@ -118,4 +118,4 @@ window.addEventListener("load", function(){
 });
 
 // hello message
-console.log("Hi! :3 Thanks for checking out my code! As a side note, please don't copy! I spent a lot of time building this myself. Feel free to reach out to me if you have any questions! :)")
+console.log("Hi! :3 Thanks for checking out my code! As a side note, please don't copy! I spent a lot of time building this. Feel free to reach out to me if you have any questions! :)")
