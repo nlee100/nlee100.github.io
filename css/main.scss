@@ -141,7 +141,7 @@ header {
     @include component(100%, 100%, relative);
     padding: 20px 0px 20px 0px;
     color: $content-color;
-    background-image: url("../images/background2.jpeg");
+    background-image: url("../images/home-bckgnd.jpeg");
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
@@ -328,7 +328,7 @@ header {
 #writing {
     @include flex(center, column, center); 
     @include component(100%, 100%, relative);
-    background-image: url("../images/end-background.jpeg");
+    background-image: url("../images/writing-bckgnd.jpeg");
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
