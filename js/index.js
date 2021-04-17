@@ -110,5 +110,13 @@ function consoleText(words, id, colors) {
   }, 400)
 }
 
+// ------------------------- loader ------------------------- //
+
+window.addEventListener("load", function(){
+  var loader = document.getElementsByClassName("loader")[0];
+  loader.classList.add("fadedOut");
+  // loader.className += "fadedOut";
+});
+
 // hello message
 console.log("Hi! :3 Thanks for checking out my code! As a side note, please don't copy! I spent a lot of time building this myself. Feel free to reach out to me if you have any questions! :)")
