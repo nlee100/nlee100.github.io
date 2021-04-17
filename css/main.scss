@@ -611,6 +611,6 @@ iframe {
 @keyframes fadeOutLoader {
     100% {
         opacity: 0;
-        visiblity: hidden;
+        display: none;
     }
 }

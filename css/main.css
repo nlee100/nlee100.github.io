@@ -659,14 +659,14 @@ iframe {
 @-webkit-keyframes fadeOutLoader {
   100% {
     opacity: 0;
-    visiblity: hidden;
+    display: none;
   }
 }
 
 @keyframes fadeOutLoader {
   100% {
     opacity: 0;
-    visiblity: hidden;
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */
