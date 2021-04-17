@@ -304,7 +304,7 @@ header .nav-link a:hover:after {
 }
 
 #cs-gallery .overlay-icon i {
-  color: black;
+  color: rgba(0, 0, 0, 0.514);
   margin: 0px 10px;
 }
 
@@ -543,8 +543,8 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 80%;
-  width: 80%;
+  height: 75%;
+  width: 75%;
 }
 
 #project_lg_pic {

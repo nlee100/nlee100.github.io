@@ -287,7 +287,7 @@ header {
         padding-top: 20px;
         margin-top: 20px;
         i {
-            color: $content-color;
+            color: $overlay-color;
             margin: 0px 10px;
         }
         i:hover{
@@ -545,8 +545,8 @@ footer {
 
 #image-container {
     @include flex(center, row, center);
-    height: 80%;
-    width: 80%;
+    height: 75%;
+    width: 75%;
     // padding: 20px;
 }
 
