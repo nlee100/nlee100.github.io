@@ -289,7 +289,30 @@ header .nav-link a:hover:after {
   text-align: center;
 }
 
-.project-title {
+#cs-gallery .overlay-icon {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  width: 90%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: right;
+  display: block;
+  padding: 10px;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+#cs-gallery .overlay-icon i {
+  color: black;
+  margin: 0px 10px;
+}
+
+#cs-gallery .overlay-icon i:hover {
+  color: #F7882F;
+}
+
+#cs-gallery .project-title {
   position: absolute;
   text-align: center;
   top: 30%;
@@ -301,7 +324,7 @@ header .nav-link a:hover:after {
   font-family: "Montserrat";
 }
 
-.project-subtitle {
+#cs-gallery .project-subtitle {
   position: absolute;
   width: 95%;
   padding: 2.5%;
