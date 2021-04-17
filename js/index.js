@@ -115,7 +115,6 @@ function consoleText(words, id, colors) {
 window.addEventListener("load", function(){
   var loader = document.getElementsByClassName("loader")[0];
   loader.classList.add("fadedOut");
-  loader.remove();
 });
 
 // hello message

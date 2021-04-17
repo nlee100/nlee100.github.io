@@ -660,6 +660,7 @@ iframe {
   100% {
     opacity: 0;
     display: none;
+    z-index: -1;
   }
 }
 
@@ -667,6 +668,7 @@ iframe {
   100% {
     opacity: 0;
     display: none;
+    z-index: -1;
   }
 }
 /*# sourceMappingURL=main.css.map */
