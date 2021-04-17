@@ -4,9 +4,9 @@
 <head>
     <meta charset "UTF-8" />
     <meta name="viewport" content-"width=device-width, initial-scale=1.0" />
-    <!-- <base target="_blank" rel="noopener noreferrer"> -->
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="shortcut icon" href="../images/profile_test_3.png" type="image/x-icon">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <title>Naomi Lee</title>
@@ -26,7 +26,7 @@
 
     <section id="info">
         <br><br><br><br>
-        <div><h class=".project-h">Augmented Reality: Glasses for Visually Impaired</h></div><br>
+        <h data-aos="fade-right" class=".project-h">Augmented Reality: Glasses for Visually Impaired</h><br>
         <div id="image-container">
             <img id="project_lg_pic" src="../images/glasses_front.jpg">
         </div>
@@ -35,10 +35,10 @@
     <section id="info">
         <div id="info-content">
             <!-- <br><br> -->
-            <div><h class="subheader">Task</h></div>
-            <p>These glasses were built to give visually-impaired users more information about their surroundings by relaying distances via sound or visual text. They employed <span class="emphasize">Arduino Nano</span>, <span class="emphasize">PETG 3D prints</span>, <span class="emphasize">ultrasonic distance sensors</span>, and <span class="emphasize">piezoelectric speakers</span> along with a switchable power source. My iterative designs included laser-cut prototypes, microcontroller programming, and peer critical feedback. Using <span class="emphasize">MIT App Inventor</span>, I created an app that connects to Arduino Nano via Bluetooth to relay visual distance messages from the glasses to your phone. </p>
-            <div><h class="subheader">Future Implementations</h></div>
-            <p>One of the next steps in creating a wearable devices is comfort and polish. While the device is easy to wear and the weight manageable, it does not possess the same sleekness as a normal pair of glasses or symmetry. Also, I could try to use the phone's built-in gyroscope, which has the capacity to enhance the glasses's sensitivity to its surroundings.</p>
+            <subheader data-aos="fade-right">Task</subheader>
+            <p data-aos="fade-right">These glasses were built to give visually-impaired users more information about their surroundings by relaying distances via sound or visual text. They employed <span class="emphasize">Arduino Nano</span>, <span class="emphasize">PETG 3D prints</span>, <span class="emphasize">ultrasonic distance sensors</span>, and <span class="emphasize">piezoelectric speakers</span> along with a switchable power source. My iterative designs included laser-cut prototypes, microcontroller programming, and peer critical feedback. Using <span class="emphasize">MIT App Inventor</span>, I created an app that connects to Arduino Nano via Bluetooth to relay visual distance messages from the glasses to your phone. </p>
+            <subheader data-aos="fade-right">Future Implementations</subheader>
+            <p data-aos="fade-right">One of the next steps in creating a wearable devices is comfort and polish. While the device is easy to wear and the weight manageable, it does not possess the same sleekness as a normal pair of glasses or symmetry. Also, I could try to use the phone's built-in gyroscope, which has the capacity to enhance the glasses's sensitivity to its surroundings.</p>
         </div>
     </section>
     
@@ -54,7 +54,13 @@
     </footer>
 </body>
 
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 <script src="../js/project.js"></script>
 <script src="https://use.fontawesome.com/ad5bce4110.js"></script>
+<script>
+    AOS.init({
+        duration: 1200,
+    });
+</script>
 
 </html>

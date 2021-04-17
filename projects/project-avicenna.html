@@ -4,9 +4,9 @@
 <head>
     <meta charset "UTF-8" />
     <meta name="viewport" content-"width=device-width, initial-scale=1.0" />
-    <!-- <base target="_blank" rel="noopener noreferrer"> -->
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="shortcut icon" href="../images/profile_test_3.png" type="image/x-icon">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <title>Naomi Lee</title>
@@ -26,18 +26,18 @@
 
     <section id="info">
         <br><br><br><br>
-        <div><h class=".project-h">Web Dev: Avicenna Hospital</h></div><br>
+        <h data-aos="fade-right" class=".project-h">Web Dev: Avicenna Hospital</h><br>
         <iframe src="https://www.loom.com/embed/c8702b6cc06140479d41f5a8ed78a139" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         <br><i class="fa fa-chevron-down" aria-hidden="true"></i>
     </section>
     <section id="info">
         <div id="info-content">
             <!-- <br><br> -->
-            <div><h class="subheader">Task</h></div>
-            <p>In collaboration with two other Brown University students, this website was built for our client, the <a target=”_blank” href="https://www.devex.com/organizations/sustainable-international-medical-relief-organization-simro-78767">#Sustainable International Medical Relief Organization (SIMRO)</a>, a Turkish based <span class="emphasize">NGO</span> founded by Syrian doctors with the purpose of <span class="emphasize">rebuilding the Syrian Healthcare system</span>. The site publicized new information regarding the hospital from CNN, the Guardian, and BBC, received donations, aggregated donation and donor data, and kept donors informed on current news online and via email subscription.
+            <subheader data-aos="fade-right">Task</subheader>
+            <p data-aos="fade-right">In collaboration with two other Brown University students, this website was built for our client, the <a target=”_blank” href="https://www.devex.com/organizations/sustainable-international-medical-relief-organization-simro-78767">#Sustainable International Medical Relief Organization (SIMRO)</a>, a Turkish based <span class="emphasize">NGO</span> founded by Syrian doctors with the purpose of <span class="emphasize">rebuilding the Syrian Healthcare system</span>. The site publicized new information regarding the hospital from CNN, the Guardian, and BBC, received donations, aggregated donation and donor data, and kept donors informed on current news online and via email subscription.
             </p>
-            <div><h class="subheader">Context</h></div>
-            <p>The Syrian healthcare system, hospitals, and humanitarians acting to improve health, have been under attack as a form of warfare in the Syrian civil war. SIMRO Founder and CEO <span class="emphasize">Dr. Khaled Almilaji</span>, a former Brown MPH student until his student visa was revoked during the Trump Travel Ban, has spearheaded various SIMRO health care programs throughout Syria—the most recent being the construction and opening of the <span class="emphasize">Avicenna Women’s & Children Hospital</span>, the largest underground hospital in Idlib, Syria. Due to the ever-growing instability in Syria, it has been challenging to secure funding to fortify the structure, equip the hospital, secure salaries, and furnish the units. Therefore, SIMRO has relied on a grassroots donation structure to maintain the hospital. Our website is purported to <span class="emphasize">aid activism about the Syrian civil war</span> and <span class="emphasize">spread awareness</span>.</p>
+            <subheader data-aos="fade-right">Context</subheader>
+            <p data-aos="fade-right">The Syrian healthcare system, hospitals, and humanitarians acting to improve health, have been under attack as a form of warfare in the Syrian civil war. SIMRO Founder and CEO <span class="emphasize">Dr. Khaled Almilaji</span>, a former Brown MPH student until his student visa was revoked during the Trump Travel Ban, has spearheaded various SIMRO health care programs throughout Syria—the most recent being the construction and opening of the <span class="emphasize">Avicenna Women’s & Children Hospital</span>, the largest underground hospital in Idlib, Syria. Due to the ever-growing instability in Syria, it has been challenging to secure funding to fortify the structure, equip the hospital, secure salaries, and furnish the units. Therefore, SIMRO has relied on a grassroots donation structure to maintain the hospital. Our website is purported to <span class="emphasize">aid activism about the Syrian civil war</span> and <span class="emphasize">spread awareness</span>.</p>
         </div>
     </section>
 
@@ -53,7 +53,13 @@
     </footer>
 </body>
 
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 <script src="../js/project.js"></script>
 <script src="https://use.fontawesome.com/ad5bce4110.js"></script>
+<script>
+    AOS.init({
+        duration: 1200,
+    });
+</script>
 
 </html>

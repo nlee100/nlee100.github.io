@@ -4,9 +4,9 @@
 <head>
     <meta charset "UTF-8" />
     <meta name="viewport" content-"width=device-width, initial-scale=1.0" />
-    <!-- <base target="_blank" rel="noopener noreferrer"> -->
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="shortcut icon" href="../images/profile_test_3.png" type="image/x-icon">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <title>Naomi Lee</title>
@@ -27,18 +27,18 @@
     <!-- <h class=".project-h">Predictive Algorithm: Primate Hand Position</h></div><br> -->
     <section id="info">
         <br><br><br><br>
-        <div><h class=".project-h">UI Design: Startup Company</h></div><br>
+        <h data-aos="fade-right" class=".project-h">UI Design: Startup Company</h><br>
         <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800px" height="500px" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FXvEJw2PAB4Ayf5PBUKgrsB%2FReal-World-Playbook%3Fscaling%3Dscale-down%26node-id%3D181%253A383" allowfullscreen></iframe>
         <br><i class="fa fa-chevron-down" aria-hidden="true"></i>
     </section>
     <section id="info">
         <div id="info-content">
             <!-- <br><br> -->
-            <div><h class="subheader">Task</h></div>
-            <p>With a group of three other Brown University students, I iteratively designed an mobile interface for the startup <span class="emphasize">Real World Playbook</span> (now called Realworld). Our design process included extensive user testing experiments and analysis, ethical considerations, and lo-fi and hi-fi sketches using <span class="emphasize">Sketch</span> and <span class="emphasize">Figma</span>. The final hi-fi Figma prototype can be seen above. 
+            <subheader data-aos="fade-right">Task</subheader>
+            <p data-aos="fade-right">With a group of three other Brown University students, I iteratively designed an mobile interface for the startup <span class="emphasize">Real World Playbook</span> (now called Realworld). Our design process included extensive user testing experiments and analysis, ethical considerations, and lo-fi and hi-fi sketches using <span class="emphasize">Sketch</span> and <span class="emphasize">Figma</span>. The final hi-fi Figma prototype can be seen above. 
             </p>
-            <div><h class="subheader">Context</h></div>
-            <p><a target=”_blank” href="https://www.realworldplaybook.com/">#Realworld</a> is an education-first platform that provides new undergraduates step-by-step guides for navigating post-college life. Step-by-step guides advise students about health insurance, taxes, employer paperwork, budgeting, credit, etc. to help them find independence. Currently, it is used by 40+ top universities in America.
+            <subheader data-aos="fade-right">Context</subheader>
+            <p data-aos="fade-right"><a target=”_blank” href="https://www.realworldplaybook.com/">#Realworld</a> is an education-first platform that provides new undergraduates step-by-step guides for navigating post-college life. Step-by-step guides advise students about health insurance, taxes, employer paperwork, budgeting, credit, etc. to help them find independence. Currently, it is used by 40+ top universities in America.
             </p>
         </div>
     </section>
@@ -55,7 +55,13 @@
     </footer>
 </body>
 
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 <script src="../js/project.js"></script>
 <script src="https://use.fontawesome.com/ad5bce4110.js"></script>
+<script>
+    AOS.init({
+        duration: 1200,
+    });
+</script>
 
 </html>
