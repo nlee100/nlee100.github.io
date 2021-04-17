@@ -1,3 +1,5 @@
+// ------------------------- navigation bar ------------------------- //
+
 // enable smooth scrolling between nav-link anchors
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -26,4 +28,5 @@ window.addEventListener("scroll", function(){
    lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
 }, false);
 
+// hello message
 console.log("Hi! :3 Thanks for checking out my code! As a side note, please don't copy! I spent a lot of time building this myself. Feel free to reach out to me if you have any questions. :)")

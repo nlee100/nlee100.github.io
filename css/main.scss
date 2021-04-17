@@ -1,5 +1,5 @@
-// @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+// ------------------------- various fonts ------------------------- //
+
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;400&display=swap');
@@ -10,10 +10,7 @@
 
 @import "./variables";
 
-// @font-face {
-//     font-family: 'SIMPLIFICA';
-//     src: URL('SIMPLIFICA Typeface.ttf') format('truetype');
-//   }
+// ------------------------- all pages ------------------------- //
 
 @mixin flex($justify-content, $direction, $align) {
     display: flex;
@@ -40,6 +37,8 @@ body {
     margin: 0;
     height: 100%;
 }
+
+// ------------------------- navigation bar ------------------------- //
 
 header {
     @include flex(space-between, row, center);
@@ -102,7 +101,6 @@ header {
         }
     }
 }
-// https://codepen.io/devver/pen/rNjNoZZ
 
 // classes to change nav bar on scroll
 .hidden {
@@ -136,7 +134,8 @@ header {
     // height: 2px;
 }
 
-// components of each section: home, about me, cs, writing
+// ------------------------- components: home, about me, cs, writing ------------------------- //
+
 #home {
     @include flex(center, column, center);
     @include component(100%, 100%, relative);
@@ -336,6 +335,7 @@ header {
     background-size: cover;
 }
 
+// container for writing-content
 #writing-container {
     // @include flex(center, none, center);
     background-color: #ffffff;
@@ -399,7 +399,8 @@ p {
     }
 }
 
-// word carousel for different noun descriptions 
+// ------------------------- word carousel ------------------------- //
+
 // wordCarousel {
 //     @include flex(center, none, center);
 // }
@@ -445,7 +446,8 @@ p {
 // }
 // end of word carousel for different noun descriptions 
 
-// console typewriter for different noun descriptions 
+// ------------------------- console typewriter ------------------------- //
+
 .hidden {
     opacity:0;
 }
@@ -471,7 +473,7 @@ p {
     font-family: "Montserrat";
     font-weight: bold;
 }
-// end of console typewriter for different noun descriptions 
+// {end of console typewriter for different noun descriptions}
 
 #title_pic {
     height: 30px;
@@ -487,6 +489,8 @@ p {
     border-radius: 100%;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
+
+// ------------------------- footer ------------------------- //
 
 icon-bar-about {
     color: $content-color;
@@ -525,9 +529,9 @@ footer {
     padding: 10px;
 }
 
-// ------------------------- projects -------------------------
+// ------------------------- project pages ------------------------- //
+
 .project-h {
-    // color: $content-color;
     font-size: 30px;
     font-weight: bold;
     font-family: "Montserrat";
@@ -543,11 +547,11 @@ subheader {
     margin-left: 10px;
 }
 
+// container for project_lg_pic
 #image-container {
     @include flex(center, row, center);
     height: 75%;
     width: 75%;
-    // padding: 20px;
 }
 
 #project_lg_pic {
@@ -557,6 +561,7 @@ subheader {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
+// container for info-content
 #info {
     @include flex(left, column, center); 
     @include component(100%, 100%, relative);
@@ -565,28 +570,20 @@ subheader {
 
 #info-content {
     @include flex(center, column, block);
-    // flex-direction: column;
     margin: 0;
-    // margin-right: 50px;
     width: 75%;
     min-width: 330px;
     line-height: $line-height;
 }
 
+// container for iframe
 #iframe-container {
     @include flex(center, row, center);
     height: 100%;
     width: 100%;
-    // padding: 20px;
 }
 
 iframe {
-    // height: 100%;
-    // width:100%;
     width:80%;
      height:75%;
-    // googleapps domain:docs 
-    // dir="viewer" 
-    // query="url=https://ohansemmanuel.github.io/assets/pdf/understanding-flexbox.pdf&embedded=true" width="600" 
-    // height="780"
 }
