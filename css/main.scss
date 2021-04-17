@@ -204,7 +204,7 @@ header {
         transition: all 0.4s ease-in-out;
         &:hover {
             transform: scale(1.05);
-            // cursor: pointer;
+            cursor: pointer;
             .project-title {
                 color: $overlay-color;
             }
@@ -335,17 +335,6 @@ header {
     background-size: cover;
 }
 
-#writing-content {
-    @include flex(center, column, left);
-    // flex-direction: column;
-    margin: 0;
-    // margin-right: 50px;
-    // width: 75%;
-    min-width: 330px;
-    line-height: $line-height;
-    // background: blue;
-}
-
 #writing-container {
     // @include flex(center, none, center);
     background-color: #ffffff;
@@ -354,7 +343,16 @@ header {
     // margin: 10px;
     width: 75%;
     height: 55%;
-    
+}
+
+#writing-content {
+    @include flex(center, column, left);
+    // flex-direction: column;
+    margin: 12% 12% 0% 12%;
+    // margin-right: 50px;
+    // width: 75%;
+    min-width: 330px;
+    line-height: $line-height;
 }
 
 h {
@@ -368,7 +366,7 @@ h {
 p {
     // color: $content-color;
     font-size: 18px;
-    margin: 9px;
+    margin: 10px;
     .emphasize {
         color: $highlight-color;
         font-weight: bold;
@@ -524,4 +522,70 @@ footer {
     font-size: 16px;
     text-align: center;
     padding: 10px;
+}
+
+// ------------------------- projects -------------------------
+.project-h {
+    // color: $content-color;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Montserrat";
+    padding-bottom: 20px;
+    float: bottom;
+    // position: relative;
+}
+
+.subheader {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Montserrat";
+    margin-left: 10px;
+}
+
+#image-container {
+    @include flex(center, row, center);
+    height: 80%;
+    width: 80%;
+    // padding: 20px;
+}
+
+#project_lg_pic {
+    @include flex(center, row, center);
+    max-width: 100%;
+    max-height: 100%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+#info {
+    @include flex(left, column, center); 
+    @include component(100%, 100%, relative);
+    color: $content-color;
+}
+
+#info-content {
+    @include flex(center, column, block);
+    // flex-direction: column;
+    margin: 0;
+    // margin-right: 50px;
+    width: 75%;
+    min-width: 330px;
+    line-height: $line-height;
+}
+
+#iframe-container {
+    @include flex(center, row, center);
+    height: 100%;
+    width: 100%;
+    // padding: 20px;
+}
+
+iframe {
+    // height: 100%;
+    // width:100%;
+    width:80%;
+     height:75%;
+    // googleapps domain:docs 
+    // dir="viewer" 
+    // query="url=https://ohansemmanuel.github.io/assets/pdf/understanding-flexbox.pdf&embedded=true" width="600" 
+    // height="780"
 }

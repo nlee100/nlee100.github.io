@@ -248,6 +248,7 @@ header .nav-link a:hover:after {
 #cs-gallery .project:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
+  cursor: pointer;
 }
 
 #cs-gallery .project:hover .project-title {
@@ -335,6 +336,15 @@ header .nav-link a:hover:after {
   background-size: cover;
 }
 
+#writing-container {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  padding: 20px;
+  width: 75%;
+  height: 55%;
+}
+
 #writing-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -349,18 +359,9 @@ header .nav-link a:hover:after {
   -webkit-box-align: left;
       -ms-flex-align: left;
           align-items: left;
-  margin: 0;
+  margin: 12% 12% 0% 12%;
   min-width: 330px;
   line-height: 1.5;
-}
-
-#writing-container {
-  background-color: #ffffff;
-  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  padding: 20px;
-  width: 75%;
-  height: 55%;
 }
 
 h {
@@ -372,7 +373,7 @@ h {
 
 p {
   font-size: 18px;
-  margin: 9px;
+  margin: 10px;
 }
 
 p .emphasize {
@@ -488,5 +489,121 @@ footer {
   font-size: 16px;
   text-align: center;
   padding: 10px;
+}
+
+.project-h {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Montserrat";
+  padding-bottom: 20px;
+  float: bottom;
+}
+
+.subheader {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Montserrat";
+  margin-left: 10px;
+}
+
+#image-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80%;
+  width: 80%;
+}
+
+#project_lg_pic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 100%;
+  max-height: 100%;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+#info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  color: black;
+}
+
+#info-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: block;
+      -ms-flex-align: block;
+          align-items: block;
+  margin: 0;
+  width: 75%;
+  min-width: 330px;
+  line-height: 1.5;
+}
+
+#iframe-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+iframe {
+  width: 80%;
+  height: 75%;
 }
 /*# sourceMappingURL=main.css.map */
