@@ -562,17 +562,18 @@ subheader {
 }
 
 // container for info-content
-#info {
+.info {
     @include flex(left, column, center); 
+    // makes page of text for each project page too long ... make separate component?
     @include component(100%, 100%, relative);
     color: $content-color;
 }
 
-#info-content {
+.info-content {
     @include flex(center, column, block);
     margin: 0;
     width: 75%;
-    min-width: 330px;
+    // min-width: 330px;
     line-height: $line-height;
 }
 

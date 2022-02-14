@@ -567,7 +567,7 @@ subheader {
           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
-#info {
+.info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -587,7 +587,7 @@ subheader {
   color: black;
 }
 
-#info-content {
+.info-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -603,7 +603,6 @@ subheader {
           align-items: block;
   margin: 0;
   width: 75%;
-  min-width: 330px;
   line-height: 1.5;
 }
 
