@@ -61,7 +61,7 @@ window.addEventListener('scroll', changeNavLinkOnScroll);
 // ------------------------- console typewriter ------------------------- //
 
 // console typewriter for different noun descriptions
-consoleText(['student.','varsity athlete.', 'software developer.', 'writer.'], 'text',['#d81159', '#956262','#4EC5C1','#F7882F']);
+consoleText(['student.','varsity athlete.', 'software engineer.', 'writer.'], 'text',['#d81159', '#956262','#4EC5C1','#F7882F']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
