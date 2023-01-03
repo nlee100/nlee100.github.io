@@ -1,2 +1,2 @@
 # website URL
-https://naomi-lee.netlify.app
+https://naomilee.netlify.app
