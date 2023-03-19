@@ -61,7 +61,7 @@ window.addEventListener('scroll', changeNavLinkOnScroll);
 // ------------------------- console typewriter ------------------------- //
 
 // console typewriter for different noun descriptions
-consoleText(['computational biologist.', 'data engineer.', 'writer.', 'golfer.'], 'text',['#d81159', '#956262','#4EC5C1','#F7882F']);
+consoleText(['computational biologist.', 'data scientist.', 'writer.', 'golfer.'], 'text',['#d81159', '#956262','#4EC5C1','#F7882F']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
@@ -118,4 +118,4 @@ window.addEventListener("load", function(){
 });
 
 // hello message
-console.log("Hi! :3 Thanks for checking out my code! As a side note, please don't copy! I spent a lot of time building this. Feel free to reach out to me if you have any questions! :)")
+console.log("Hi! :3 Thanks for checking out my code! Feel free to reach out to me if you have any questions! :)")

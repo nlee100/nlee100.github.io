@@ -15,7 +15,7 @@
 <body>
 
     <div class="loader">
-        <img src="images/pulse.gif" alt="three bars oscillating">
+        <img src="images/loader.gif" alt="three bars oscillating">
     </div>
 
     <header>
@@ -26,7 +26,7 @@
             <div class="nav-link"><a href="#home">Home</a></div>
             <div class="nav-link"><a href="#about">About Me</a></div>
             <div class="nav-link"><a href="#cs">Selected Work</a></div>
-            <div class="nav-link"><a href="#writing">Writing Portfolio</a></div>
+            <!-- <div class="nav-link"><a href="#writing">Writing Portfolio</a></div> -->
         </div>
     </header>
 
@@ -53,6 +53,12 @@
             <p> Focused on <span class="emphasize">Machine Learning</span> and <span class="emphasize">Computational Biology</span>, I'm passionate about applications of technology to Big Data, Statistical Theory, and Digital Health.</p>
             <p>My hope is to make the world <span class="emphasize">smarter</span>, <span class="emphasize">safer</span>, and a bit <span class="emphasize">kinder</span>—one algo at a time!</p>
         </div>
+        <icon-bar-home data-aos="fade-up" class="fa-lg">
+            <a class="btn btn-default" href="mailto:naomileegolfer@gmail.com"><i class="fa fa-envelope fa-clickable" aria-hidden="true" title="Email"></i></a>
+            <a class="btn btn-default" target="_blank" href="https://www.linkedin.com/in/naomi-lee100/"><i class="fa fa-linkedin fa-clickable" aria-hidden="true" title="LinkedIn"></i></a>
+            <a class="btn btn-default" target="_blank" href="https://github.com/nlee100"><i class="fa fa-github fa-clickable" aria-hidden="true" title="GitHub" ></i></a>
+            <a class="btn btn-default" target="_blank" href="https://www.facebook.com/profile.php?id=100013110647234"><i class="fa fa-facebook fa-clickable" aria-hidden="true" title="Facebook"></i></a>
+        </icon-bar-home> 
     </section>
 
     <section id="about">
@@ -60,21 +66,20 @@
         <div data-aos="fade-right" id="about-content">
             <p>Hello! I'm Naomi, master's graduate with a specialization in AI/ML and Computational Biology at <a target=”_blank” href="https://www.brown.edu/">#Brown University</a>. As an undergrad, I was a four-year varsity athlete and double-major in <span class="emphasize">computer science</span> and <span class="emphasize">English</span>. With my knowledge of computer science, I enjoy applying statistical learning and UI/UX design to create <span class="emphasize">digital health solutions</span> that improve patient care. When I'm not debugging, you can find me writing creative nonfiction or perusing SOTA works. Otherwise, I'm searching for boba, reading paperbacks, or hitting golf balls.</p>
             <p>Previously, I've interned at <a target=”_blank” href="https://www.siemens-healthineers.com/">#Siemens Healthineers</a> and <a target=”_blank” href="https://www.intuitive.com/en-us">#Intuitive Surgical</a> in <span class="emphasize">big data</span> and <span class="emphasize">full-stack software engineering</span>. My academic research has been concentrated on computational omics and evidence in claims/EHR data. Most recently, I served as a Data Scientist at <a target=”_blank” href="https://transcarent.com/">#Transcarent</a>.</p>
-            <p>As I learn, I'm always looking for opportunities to work with kind and talented people, so feel free to <a target=”_blank” href="mailto:naomileegolfer@gmail.com">#reach out to me</a>. Check out some of my most recent projects below to see what I've been up to!</p>
         </div>
-        <icon-bar-about data-aos="fade-up">
+        <!-- <icon-bar-about data-aos="fade-up">
             <a class="btn btn-default" href="mailto:naomileegolfer@gmail.com"><i class="fa fa-envelope fa-clickable fa-lg" aria-hidden="true" title="Email"></i></a>
             <a class="btn btn-default" target="_blank" href="https://www.linkedin.com/in/naomi-lee100/"><i class="fa fa-linkedin fa-clickable fa-lg" aria-hidden="true" title="LinkedIn"></i></a>
             <a class="btn btn-default" target="_blank" href="https://github.com/nlee100"><i class="fa fa-github fa-clickable fa-lg" aria-hidden="true" title="GitHub" ></i></a>
             <a class="btn btn-default" target="_blank" href="https://www.facebook.com/profile.php?id=100013110647234"><i class="fa fa-facebook fa-clickable fa-lg" aria-hidden="true" title="Facebook"></i></a>
-        </icon-bar-about> 
+        </icon-bar-about>  -->
     </section>
 
     <section id="cs">
         <h data-aos="fade-right">Selected Work</h>
         <p data-aos="fade-right" id="cs-content">Check out some of my final project results formatted into a publication, scientific poster, clickable prototype, or video!</p>
         <div id="cs-gallery">
-            <div data-aos="flip-left" onclick="window.location.href = 'projects/project-mRNA.html'" class="project">
+            <div data-aos="flip-left" data-aos-delay="100" onclick="window.location.href = 'projects/project-mRNA.html'" class="project">
                 <div class="overlay-icon"><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i></div>
                 <img class="project_pic" src="images/turquoise4.jpeg">
                 <div class="project-title">Predictive Algorithm: <br> mRNA Degradation</div>
@@ -83,8 +88,7 @@
                     </div>
                 </div>
             </div>
-
-            <div data-aos="flip-left" onclick="window.location.href = 'projects/project-primate.html'" class="project">
+            <div data-aos="flip-left" data-aos-delay="200" onclick="window.location.href = 'projects/project-primate.html'" class="project">
                 <div class="overlay-icon"><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i></div>
                 <img class="project_pic" src="images/turquoise3.jpeg">
                 <div class="project-title">Predictive Algorithm: <br> Primate Hand Position</div>
@@ -92,7 +96,7 @@
                     <div class="overlay-text">Created multiple deep learning and Kalman Filter models to predict primate limb positions using primary motor cortex activity</div>
                 </div>
             </div>
-            <div data-aos="flip-left" onclick="window.location.href = 'projects/project-startup.html'" class="project">
+            <div data-aos="flip-left" data-aos-delay="300" onclick="window.location.href = 'projects/project-startup.html'" class="project">
                 <div class="overlay-icon"><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i></div>
                 <img class="project_pic" src="images/turquoise1.jpeg">
                 <div class="project-title">UI Design: <br> Startup Company</div>
@@ -100,7 +104,7 @@
                     <div class="overlay-text">Iteratively designed UI for startup Real World Playbook</div>
                 </div>
             </div>
-            <div data-aos="flip-left" onclick="window.location.href = 'projects/project-avicenna.html'" class="project">
+            <div data-aos="flip-left" data-aos-delay="400" onclick="window.location.href = 'projects/project-avicenna.html'" class="project">
                 <div class="overlay-icon"><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i></div>
                 <img class="project_pic" src="images/turquoise2.jpeg">
                 <div class="project-title">Web Dev: <br> Avicenna Hospital</div>
@@ -108,7 +112,7 @@
                     <div class="overlay-text">Built website for the Avicenna Hospital for Women and Children in Syria</div>
                 </div>
             </div>
-            <div data-aos="flip-left" onclick="window.location.href = 'projects/project-glasses.html'" class="project">
+            <div data-aos="flip-left" data-aos-delay="500" onclick="window.location.href = 'projects/project-glasses.html'" class="project">
                 <div class="overlay-icon"><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i></div>
                 <img class="project_pic" src="images/turquoise5.jpeg">
                 <div class="project-title">Augmented Reality: <br> Glasses for Visually Impaired</div>
@@ -120,10 +124,10 @@
     </section>
 
     <section id="writing">
-        <h data-aos="fade-right">Writing Portfolio</h>
+        <h data-aos="fade-right">Get in touch!</h>
         <div data-aos="fade-right" id="writing-container">
             <div id="writing-content">
-                <p>My body of work in writing primarily consists of <span class="emphasize">poetry</span> and centers around <span class="emphasize">activism</span>. Check back soon to see some of my published pieces!</p>
+                <p>As I learn, I'm always looking for opportunities to work with kind and talented people, so feel free to <a target=”_blank” href="mailto:naomileegolfer@gmail.com">#reach out to me</a>.</p>
             </div>
         </div>
     </section>
@@ -144,7 +148,7 @@
 <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 <script src="js/index.js"></script>
 <!-- <script src="node_modules/smoothscroll-polyfill/dist/smoothscroll.js"></script> -->
-<script src="https://use.fontawesome.com/ad5bce4110.js"></script>
+<script src="https://kit.fontawesome.com/eeadf62ab4.js" crossorigin="anonymous"></script>
 <script>
     AOS.init({
         duration: 1200,

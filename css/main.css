@@ -112,7 +112,7 @@ header .nav-link a:hover:after {
   flex-direction: column;
   align-items: left;
   margin: 0;
-  width: 50%;
+  width: 75%;
   min-width: 330px;
   line-height: 1.5;
   color: rgb(0, 0, 0);
@@ -175,8 +175,8 @@ header .nav-link a:hover:after {
   text-align: center;
 }
 #cs-gallery .project_pic {
-  width: 400px;
-  height: 500px;
+  width: 800px;
+  height: 1500px;
 }
 #cs-gallery .project {
   position: relative;
@@ -185,7 +185,6 @@ header .nav-link a:hover:after {
   overflow: hidden;
   margin: 10px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  transition: all 0.5s ease-in-out;
 }
 #cs-gallery .project:hover {
   transform: scale(1.05);
@@ -208,9 +207,6 @@ header .nav-link a:hover:after {
   height: 0;
   transition: 0.4s ease;
   opacity: 0.7;
-}
-#cs-gallery .project-pic {
-  position: absolute;
 }
 #cs-gallery .overlay-text {
   font-size: 14px;
@@ -280,21 +276,25 @@ header .nav-link a:hover:after {
 }
 
 #writing-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   background-color: #ffffff;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   padding: 20px;
   width: 75%;
-  height: 55%;
+  height: 30%;
 }
 
 #writing-content {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: left;
-  margin: 12% 12% 0% 12%;
+  align-items: center;
   min-width: 330px;
   line-height: 1.5;
+  text-align: center;
 }
 
 h {
@@ -376,18 +376,18 @@ p a:hover:after {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
-icon-bar-about {
+icon-bar-home {
   color: rgb(0, 0, 0);
   text-align: center;
   display: block;
   padding: 10px;
   padding-top: 20px;
 }
-icon-bar-about i {
+icon-bar-home i {
   color: rgb(0, 0, 0);
   margin: 0px 10px;
 }
-icon-bar-about i:hover {
+icon-bar-home i:hover {
   color: #F7882F;
   transition: 0.25s ease-in-out;
 }
@@ -423,6 +423,13 @@ footer {
   float: bottom;
 }
 
+subheader {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Montserrat";
+  margin-left: 10px;
+}
+
 #image-container {
   display: flex;
   justify-content: center;
@@ -440,6 +447,10 @@ footer {
   max-width: 100%;
   max-height: 100%;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+#test-info {
+  display: flex;
 }
 
 .info {
