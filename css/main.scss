@@ -550,6 +550,7 @@ footer {
     font-size: 16px;
     text-align: center;
     padding: 10px;
+    // position: fixed;
 }
 
 // ------------------------- project pages ------------------------- //
@@ -584,9 +585,13 @@ subheader {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
-#test-info {
-    display: flex;
-}
+// #test-info {
+//     // #TODO: makes page of text for each project page too long ... make separate component?
+//     // @include flex(left, column, center); 
+//     // @include component(100%, 100%, relative);
+//     // margin: 0;
+//     // width: 75%;
+// }
 
 // container for info-content
 .info {
@@ -594,6 +599,8 @@ subheader {
     // #TODO: makes page of text for each project page too long ... make separate component?
     @include component(100%, 100%, relative);
     color: $content-color;
+    padding-bottom: 0px;
+    margin-bottom: 2.5%;
 }
 
 .info-content {
