@@ -67,7 +67,7 @@ header .nav-link a:after {
   left: 50%;
 }
 header .nav-link a:hover:after {
-  background: #FB8500;
+  background: #F7882F;
   width: 100%;
   left: 0;
 }
@@ -85,7 +85,7 @@ header .nav-link a:hover:after {
 .active {
   bottom: 0;
   content: "";
-  color: #FB8500 !important;
+  color: #F7882F !important;
 }
 
 #home {
@@ -235,7 +235,7 @@ header .nav-link a:hover:after {
   margin: 0px 10px;
 }
 #cs-gallery .overlay-icon i:hover {
-  color: #FB8500;
+  color: #F7882F;
   transition: 0.25s ease-in-out;
 }
 #cs-gallery .project-title {
@@ -309,11 +309,11 @@ p {
   margin: 10px;
 }
 p .emphasize {
-  color: #3dccc7;
+  color: #4EC5C1;
   font-weight: bold;
 }
 p a {
-  color: #FB8500;
+  color: #F7882F;
   font-weight: bold;
   text-decoration: none;
   display: inline-block;
@@ -323,7 +323,7 @@ p a:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
-  background: #FB8500;
+  background: #F7882F;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
   display: block;
@@ -388,7 +388,7 @@ icon-bar-home i {
   margin: 0px 10px;
 }
 icon-bar-home i:hover {
-  color: #FB8500;
+  color: #F7882F;
   transition: 0.25s ease-in-out;
 }
 
@@ -404,7 +404,7 @@ icon-bar-footer i {
   margin: 0px 5px;
 }
 icon-bar-footer i:hover {
-  color: #FB8500;
+  color: #F7882F;
   transition: 0.25s ease-in-out;
 }
 
@@ -449,6 +449,10 @@ subheader {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
+#test-info {
+  display: flex;
+}
+
 .info {
   display: flex;
   justify-content: left;
@@ -458,8 +462,6 @@ subheader {
   width: 100%;
   position: relative;
   color: rgb(0, 0, 0);
-  padding-bottom: 0px;
-  margin-bottom: 2.5%;
 }
 
 .info-content {
@@ -500,8 +502,18 @@ iframe {
 }
 
 .fadedOut {
-  animation: fadeOutLoader 1s;
-  animation-fill-mode: forwards;
+  -webkit-animation: fadeOutLoader 1s;
+          animation: fadeOutLoader 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeOutLoader {
+  100% {
+    opacity: 0;
+    display: none;
+    z-index: -1;
+  }
 }
 
 @keyframes fadeOutLoader {
