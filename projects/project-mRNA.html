@@ -6,7 +6,7 @@
     <meta name="viewport" content-"width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex,nofollow">
     <link rel="stylesheet" href="../css/main.css" />
-    <link rel="shortcut icon" href="../images/profile_test_3.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../images/profile_pic2.png" type="image/x-icon">
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 </head>
 
@@ -24,44 +24,35 @@
             <div class="nav-link"><a href="../index.html#home">Home</a></div>
             <div class="nav-link"><a href="../index.html#about">About Me</a></div>
             <div class="nav-link"><a href="../index.html#cs">Selected Work</a></div>
-            <div class="nav-link"><a href="../index.html#writing">Writing Portfolio</a></div>
+            <!-- <div class="nav-link"><a href="../index.html#writing">Writing Portfolio</a></div> -->
         </div>
     </header>
 
-    <section class="info">
+    <section class="info-graphic">
         <br><br><br><br>
         <h data-aos="fade-right" class=".project-h">Predictive Algorithm: mRNA Degredation</h><br>
         <iframe src="../images/mRNA.pdf#toolbar=0" ></iframe>
     </section>
-    <!-- <section id="info"> -->
-        <!-- <br><br><br><br><div><h>Predictive Algorithm: mRNA Degredation</h></div><br> -->
-        <!-- <div id="about-content"> -->
-            
-        
-        <!-- <embed src="images/output.pdf"/> -->
-        <!-- <div><h class="subheader">Motivation</h></div>
-        <p>The fight against <span class="emphasize">COVID-19</span> requires a vaccine that can be effectively transported and widely distributed. mRNA vaccines seem to be the best candidates for immunity against the illness. However, due to the sensitive and spontaneously degrading nature of mRNA, which can render an entire mRNA vaccine useless, it is important to know which part of a given RNA sequence is most vulnerable to cutting and which is safe from degradation. A Transformer lends itself to this learning task because it takes into account the order of an input, i.e. DNA sequences, and has the known performance advantages of deep learning.</p>
-        <div><h class="subheader">Results</h></div>
-        <p>A Transformer fit to the DNA sequence data--nucleotide, structure and loop type at each location--predicts the multivariate output of five different degradation measures at sixty-eight different locations along the sequence. This model outperforms the support vector machines used as baseline.</p>
-        <div><h class="subheader">Data</h></div>
-        <p>The model uses the \href{https://www.kaggle.com/c/stanford-covid-vaccine/}{COVID-19 Stanford OpenVaccine dataset}. Multiple ground truth values are provided in the training data.</p> -->
-        <!-- </div> -->
-        <!-- <div id="iframe-container"> -->
-            <!-- #toolbar=0 -->
-            <!-- <iframe src="images/output.pdf" type="application/pdf"></iframe> -->
-        <!-- </div> -->
-    
-    <!-- </section> -->
+    <!-- <section class="info-content-container">
+        <div class="info-content">
+            <subheader data-aos="fade-right">Motivation</subheader>
+            <p data-aos="fade-right">The fight against <span class="emphasize">COVID-19</span> requires a vaccine that can be effectively transported and widely distributed. mRNA vaccines seem to be the best candidates for immunity against the illness. However, due to the sensitive and spontaneously degrading nature of mRNA, which can render an entire mRNA vaccine useless, it is important to know which part of a given RNA sequence is most vulnerable to cutting and which is safe from degradation. A Transformer lends itself to this learning task because it takes into account the order of an input, i.e. DNA sequences, and has the known performance advantages of deep learning.</p>
+            <subheader data-aos="fade-right">Results</subheader>
+            <p data-aos="fade-right">A transformer fit to the DNA sequence data--nucleotide, structure and loop type at each location--predicts the multivariate output of five different degradation measures at sixty-eight different locations along the sequence. This model outperforms the support vector machines used as baseline.</p>
+            <subheader data-aos="fade-right">Data</subheader>
+            <p data-aos="fade-right">The model uses the <a target=”_blank” href="https://www.kaggle.com/c/stanford-covid-vaccine/">#COVID-19 Stanford OpenVaccine dataset</a>. Multiple ground truth values are provided in the training data.</p>
+        </div>
+    </section> -->
     
     <icon-bar-footer>
-        <a class="btn btn-default" href="mailto:naomi_lee1@brown.edu"><i class="fa fa-envelope fa-clickable" aria-hidden="true" title="Email"></i></a>
-        <a class="btn btn-default" target="_blank" href="https://www.linkedin.com/in/naomi-lee100/"><i class="fa fa-linkedin fa-clickable" aria-hidden="true" title="LinkedIn"></i></a>
+        <a class="btn btn-default" href="mailto:naomijuyunlee@gmail.com"><i class="fa fa-envelope fa-clickable" aria-hidden="true" title="Email"></i></a>
+        <a class="btn btn-default" target="_blank" href="https://www.linkedin.com/in/nlee100/"><i class="fa fa-linkedin fa-clickable" aria-hidden="true" title="LinkedIn"></i></a>
         <a class="btn btn-default" target="_blank" href="https://github.com/nlee100"><i class="fa fa-github fa-clickable" aria-hidden="true" title="GitHub" ></i></a>
         <a class="btn btn-default" target="_blank" href="https://www.facebook.com/profile.php?id=100013110647234"><i class="fa fa-facebook fa-clickable" aria-hidden="true" title="Facebook"></i></a>
     </icon-bar-footer> 
 
     <footer>
-        © 2023 Naomi Lee.
+        © <span id="year_to_date"></span> Naomi Lee.
     </footer>
 </body>
 

@@ -13,3 +13,8 @@ $highlight2-color:#F7882F; // #s
 
 $line-height: 1.5;
 $font-weight: 300;
+
+:export {
+    primaryColorOne: $highlight-color;
+    primaryColorTwo: $highlight2-color;
+}

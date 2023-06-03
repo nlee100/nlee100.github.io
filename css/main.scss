@@ -1,7 +1,7 @@
 // ------------------------- various fonts ------------------------- //
 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
@@ -38,6 +38,13 @@ body {
     background-color: $back-color;
     margin: 0;
     height: 100%;
+    // ::-webkit-scrollbar {
+    //     display: none;
+    //     // width: 0px;
+    //     // background: transparent; /* make scrollbar transparent for Chrome */
+    // }
+    // -ms-overflow-style: none;  /* IE and Edge */
+    // scrollbar-width: none;  /* Firefox */
 }
 
 // ------------------------- navigation bar ------------------------- //
@@ -550,6 +557,7 @@ footer {
     font-size: 16px;
     text-align: center;
     padding: 10px;
+    position: relative;
 }
 
 // ------------------------- project pages ------------------------- //
@@ -584,20 +592,31 @@ subheader {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
-#test-info {
-    display: flex;
-}
-
-// container for info-content
-.info {
+.info-graphic {
     @include flex(left, column, center); 
-    // #TODO: makes page of text for each project page too long ... make separate component?
     @include component(100%, 100%, relative);
     color: $content-color;
 }
 
+// container for info-content
+.info-content-container {
+    @include flex(left, column, center); 
+    @include component(auto, 100%, relative);
+    color: $content-color;
+    // overflow: hidden;
+    // overflow-y: scroll;
+    // ::-webkit-scrollbar {
+    //     display: none;
+    //     // width: 0px;
+    //     // background: transparent; /* make scrollbar transparent for Chrome */
+    // }
+    // -ms-overflow-style: none;  /* IE and Edge */
+    // scrollbar-width: none;  /* Firefox */
+}
+
 .info-content {
     @include flex(center, column, block);
+    height: auto;
     margin: 0;
     width: 75%;
     // min-width: 330px;
